@@ -128,3 +128,29 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# AWS credentials and private keys
+*.pem
+.aws/
+
+# All environment files and secrets
+.env.*
+.env
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Project-specific build output
+frontend/build/
+backend/build/
+
+# Local uploads and temporary files
+backend/uploads/
+uploads/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
